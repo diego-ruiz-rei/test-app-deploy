@@ -14,7 +14,7 @@ spec:
         app: demo
     spec:
       containers:
-      - image: diegoruizrei/infra-test:0.0.14
+      - image: docker.drtest.reisys.io/infra-test:0.0.14
         name: demo
         ports:
         - containerPort: 8080
