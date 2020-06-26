@@ -7,4 +7,4 @@ resources:
 - ./ingress.yaml
 images:
 - name: docker.drtest.reisys.io/infra-test
-  newTag: dcc4ea18b96b8562a1da87aad21d1ffe10b14407
+  newTag: 0.0.9
