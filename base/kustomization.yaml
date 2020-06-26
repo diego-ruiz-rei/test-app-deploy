@@ -6,7 +6,5 @@ resources:
 - ./service.yaml
 - ./ingress.yaml
 images:
-- name: diegoruizrei/infra-test
-  newTag: 654bdc238edbbcc4d2eb41ad5169db4158646383
 - name: docker.drtest.reisys.io/infra-test
   newTag: dcc4ea18b96b8562a1da87aad21d1ffe10b14407
