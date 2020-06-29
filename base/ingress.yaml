@@ -10,7 +10,7 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:  
   rules:
-  - host: demo.drtest.reisys.io
+  - host: demo.drtest0629.reisys.io
     http:
       paths:
         - path: /
