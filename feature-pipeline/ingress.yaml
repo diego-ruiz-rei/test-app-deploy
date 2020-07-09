@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: testapp-ingress-subdomain
+spec:
+  rules:
+    - host: demo-feature-pipeline.jmeks20.reisys.io
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: demo
+              servicePort: 8080
+  tls:
+  - hosts:
+    # Change this to your own domain
+    - demo-feature-pipeline.jmeks20.reisys.io
