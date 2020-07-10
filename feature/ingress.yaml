@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: testapp-ingress-subdomain
+spec:
+  rules:
+    - host: demo-__BRANCH_NAME__.jmeks20.reisys.io
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: demo
+              servicePort: 8080
+  tls:
+  - hosts:
+    # Change this to your own domain
+    - demo-__BRANCH_NAME__.jmeks20.reisys.io
